@@ -1,0 +1,14 @@
+{
+    "App": {
+        "port": 3000,
+        "name": "node-api-jwt",
+        "url": "http://localhost"
+    },
+    "JWT": {
+        "private_key": "secret",
+        "expirationTime": "1h"
+    },
+    "Mongo": {
+        "url": "mongo-url"
+    }
+}
