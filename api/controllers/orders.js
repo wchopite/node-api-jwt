@@ -6,9 +6,9 @@ const config = require('config'),
     Order = require('../models/order'),
     Product = require('../models/product');
 
-let orderController = {};
+let ordersController = {};
 
-orderController.getAll = async (req, res, next) => {
+ordersController.getAll = async (req, res, next) => {
     try {
         const orders = await Order
             .find({})
@@ -36,7 +36,7 @@ orderController.getAll = async (req, res, next) => {
     }
 };
 
-orderController.create = async (req, res, next) => {
+ordersController.create = async (req, res, next) => {
     try {
         const product = await Product
             .findById(req.body.productId)
@@ -85,7 +85,7 @@ orderController.create = async (req, res, next) => {
     }
 };
 
-orderController.get = async (req, res, next) => {
+ordersController.get = async (req, res, next) => {
     const id = req.params.orderId;
 
     try {
@@ -112,7 +112,7 @@ orderController.get = async (req, res, next) => {
     }
 };
 
-orderController.delete = async (req, res, next) => {
+ordersController.delete = async (req, res, next) => {
     const id = req.params.orderId;
 
     try {
@@ -130,4 +130,4 @@ orderController.delete = async (req, res, next) => {
     }
 };
 
-module.exports = orderController;
+module.exports = ordersController;
