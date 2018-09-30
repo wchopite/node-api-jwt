@@ -1,7 +1,7 @@
 {
-  "name": "rest-shop",
+  "name": "node-api-jwt",
   "version": "1.0.0",
-  "description": "A NodeJS RESTFul Api Tutorial Project (Build a simple shop API)",
+  "description": "A NodeJS API with nodejs and mongoose",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -10,7 +10,10 @@
   "keywords": [
     "node",
     "restful",
-    "api"
+    "api",
+    "mongodb",
+    "mongoose",
+    "jwt"
   ],
   "author": "Wladimir Chopite",
   "license": "ISC",
